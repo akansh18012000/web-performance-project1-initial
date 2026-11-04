@@ -9,5 +9,5 @@ jobs:
     runs-on: ubuntu-latest
     steps:
       - name: Print Name
-        run: echo "Hello ${{ github.event.pull_request.user.login }}"
+        run: echo "Hello ${{ github.event.pusher.name }}"
     

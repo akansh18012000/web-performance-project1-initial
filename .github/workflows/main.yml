@@ -1,7 +1,7 @@
 name: Print PR Authors Name
 
 on:
-  pull_request:
+  push:
     branches: [main]
 
 jobs:

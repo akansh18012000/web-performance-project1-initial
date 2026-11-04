@@ -1,0 +1,13 @@
+name: Print PR Authors Name
+
+on:
+  pull_request:
+    branches: [main]
+
+jobs:
+  show-author:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Print Name
+        run: echo "Hello ${{ github.event.pull_request.user.login }}"
+    
